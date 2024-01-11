@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.head_start{
+    background-color:#3796C9;
+     padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+.head_start h1{
+    color: white; 
+    font-size: 40px;
+     font-weight: lighter; 
+     font-size: 45px;
+}
+.navbar{
+    
+    display: flex;
+    background-color: #333333;
+    justify-content: space-between;
+  
+}
+.nav_ul{
+    display: flex;
+  
+    list-style-type: none;
+  
+}
+
+#career_li{
+    background-color: #FF9900 ;
+}
+#career_li a{
+    border-left: 3px solid white;
+}
+
+
+#contact_li{
+    background-color: #FF9900 ;
+}
+
+#contact_li a{
+    border-left: 3px solid white;
+}
+#home_li{
+    background-color: #FF9900 ;
+   
+}
+#home_li a{
+    border-left: 3px solid white;
+}
+
+.li_first{
+    margin-left: 25px;
+}
+.list_one{
+   padding-top: 6px;
+   margin-left: 15px;
+}
+.nav_ul li:not(.list_one){
+
+    padding-top: 6px;
+    margin-left: 15px;
+
+}
+
+.list_one a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 8px 10px 7px 10px;
+    border-left: 3px solid #333333;
+}
+.list_two a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 8px 10px 7px 10px;
+    border-left: 3px solid #333333;
+}
+.list_three a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 8px 10px 7px 10px;
+    border-left: 3px solid #333333;
+}
+.list_four a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 8px 10px 7px 10px;
+    border-left: 3px solid #333333;
+}
+a:hover{
+    background-color: #FF9900;
+    border-left: 3px solid white;
+}
+
+.img{
+    
+    margin-right: 25px;
+    padding-top: 7px;
+
+}
+.content_div{
+    padding-left: 25px; 
+    padding-top: 20px;
+}
+.content{
+    border: 1px groove #ccc;
+    width: 48vw;
+    margin-left: 25px;
+    padding: 1px 1px;
+}
+.content_ul{
+    list-style-type: none;
+}
+.content_ul li{
+    padding-left: 18px;
+    padding-bottom: 15px;
+    font-size: 13px;
+    font-weight: 600;
+}
+.content_ul  ::before{
+    content: "-";
+    padding-right: 8px;
+    font-size: 10px;
+}
+.content h2{
+
+    padding: 5px 0px 3px 10px;
+    font-weight: bolder;
+    font-size:18px ;
+}
+.para{
+    padding-left: 25px;
+    padding-top: 25px;
+}
+.main{
+    margin-left: 25px;
+}
+.main h2{
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 18px;
+}
+.main p{
+    margin-bottom: 10px;
+    width: 75vw;
+    font-size: 13px;
+    font-weight: 600;
+}
+.nav_tags{
+    margin:15px 25px 25px 25px;
+    padding-left: 25px;
+  
+}
+.nav_tags .title{
+    font-weight: 5px;
+    font-size: 28px;
+    font-family: 'Jost', sans-serif;
+    letter-spacing: 1px;
+}
+.paracl_two{
+    font-size: 18px;
+    font-weight: 500;
+}
+.nav_tags .para_class{
+    font-weight: 500;
+    margin-top: 15px;
+    font-size: 18px;
+}
+.form_div{
+   
+    width: 510px;
+    margin-left: 25px;
+    padding-left: 25px;
+}
+.form{
+    display: flex;
+    padding-left: 25px;
+    justify-content: space-between;
+}
+.flex_one{
+    display: flex;
+    flex-direction: column;
+  
+}
+.flex_two{
+    display: flex;
+flex-direction: column;
+}
+.flex_inner{
+    display: flex;
+    align-items: center;
+}
+.flex_one h4{
+    margin : 12px 0;
+}
+.flex_two input{
+    margin: 10px 0;
+    width: 170px;
+    height: 30px;
+}
+.flex_two .footer_btn{
+    width: 122px;
+    height: 30px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.flex_button{
+   
+    width:90px;
+     height:30px;
+     margin-left: 20px;
+     font-weight: 600;
+     
+}
+.contact_div{
+    width: 435px;
+    margin: 15px auto 0px auto;
+    padding:  8px 10px 10px 15px;
+    box-shadow: 4px 4px 17px 7px rgba(0,0,0,0.63);
+-webkit-box-shadow: 4px 4px 17px 7px rgba(0,0,0,0.63);
+-moz-box-shadow: 4px 4px 17px 7px rgba(0,0,0,0.63);
+}
+.inform_p{
+    font-size: 12px;
+    font-weight: 500;
+}
+.contact_form label{
+    
+    font-size: 12px;
+    font-weight: bold;
+}
+.main_form{
+    padding-right: 25px;
+    margin-right: 25px;
+    position: relative;
+    
+ 
+}
+.flex{
+    display: flex;
+    margin-bottom: 15px;
+    position: relative;
+}
+.flex_radio{
+    display: flex;
+    margin-bottom: 15px;
+}
+.flex_radio div{
+   
+    padding-left: 25px;
+    margin-left: 10px;
+}
+.radio_label{
+    padding-top: 25px;
+}
+.h4_div{
+   font-size: 12px;
+   
+}
+.website{
+    display: flex;
+    margin-bottom: 8px;
+}
+.website input{
+    margin-left: 23px;
+}
+.contact_div input:not(.rad){
+    height: 23px;
+    width: 150px;
+}
+.flex_flex{
+    display: flex;
+    position: relative;
+ 
+    margin-bottom: 15px;
+}
+.flex_flex input:not(.flex_phone){
+    margin-left: 22px;
+}
+.flex_phone{
+    margin-left: 24px;
+}
+.flex input:not(.flex_city){
+    margin-right: 20px;
+}
+.flex_city{
+    margin-right: 20px;
+}
+.select_div{
+    padding-left: 25px;
+}
+.select_div select{
+    margin-left: 13px;
+    height: 22px;
+    width: 151px;
+}
+.code_div{
+    padding-left: 25px;
+    position: relative;
+    left: 34px;
+
+}
+.promotion_label{
+    margin-right: 10px;
+}
+.information_div{
+    margin-bottom: 15px;
+}
+.area_one textarea{
+   margin-top: 10px;
+   overflow-y: scroll;
+   height: 90px;
+   resize: none;
+}
+.area_two textarea{
+    margin-top: 10px;
+    overflow-y: scroll;
+    height: 90px;
+    resize: none;
+ }
+ .span_one{
+    font-size: 15px;
+    font-weight: bolder;
+    color: red;
+    letter-spacing: 1px;
+   
+ }
+ .inner_spans{
+    color: red;
+    position: absolute;
+    right: 89px;
+   bottom: -8px;
+    display: flex;
+ }
+ .contact_form{
+    margin-top: 8px;
+ }
+ .inner_span{
+    color: red;
+    position: absolute;
+    right: 65px;
+    top: 6px;
+    display: flex;
+ }
+ .inner_spanm{
+    color: red;
+    position: absolute;
+    right: 65px;
+    bottom: -8px;
+    display: flex;
+ }
+ .send_button{
+        width: 122px;
+        height: 30px;
+        
+   
+ }
+ .reset_button{
+    
+   
+        width:90px;
+         height:30px;
+         margin-left: 5px;
+         
+    
+ }
+.spanval{
+    top: 4px;
+    font-size: 12px;
+    color: red;
+    position: absolute;
+    display: flex;
+    font-weight: 600;
+    right: -32px;
+}
+.spanvaltwo{
+    bottom: 3px;
+    font-size: 12px;
+    color: red;
+    position: absolute;
+    display: flex;
+    right: -29px;
+    font-weight: 900;
+}
+.abs_class{
+    position: relative;
+}
+.spanvalthree{
+    bottom: 6px;
+    font-size: 10px;
+    color: red;
+    position: absolute;
+    display: flex;
+    right: -8px;
+    font-weight: 900;
+}
+.abs_classone{
+    position: relative;
+    left: 100px;
+}
+.abs_classtwo{
+    position: relative;
+    left: 53px;
+}
+.city_class{
+    position: relative;
+    left: 115px;
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <section>
+        <div class="head_start">
+            <h1>HEALTHONUS</h1>
+        </div>
+        <nav class="navbar">
+            <ul  class="nav_ul">
+                <li class="list_one"><a href="index.html">HOME</a></li>
+                <li class="list_two"><a href="#">SERVICES</a></li>
+                <li class="list_three"><a href="careers.html">CAREERS</a></li>
+                <li class="list_four" id="contact_li"><a href="">CONTACT</a></li>
+               
+             </ul>
+             <div class="img">
+               <img src="blog-icon.png" alt=""/>
+             </div>
+        </nav>
+        <div class="contact_div">
+            <span class="span_one" id="spanone"></span>
+            <form class="contact_form">
+            <div class="main_form">
+                <div class="flex">
+                    <label for="name">My Name:</label>
+                    <div class="abs_classone">
+                    <input type="text" id="name" onchange="validateName(this)" >
+                    </div>
+                </div>
+                <span class="inner_span" id="spOne">*</span>
+                <div class="flex">
+                    <label for="email">My Email Address:</label>
+                    <div class="abs_classtwo">
+                    <input type="email" id="email" onchange="validateEmail(this)">
+                    </div>
+                </div>
+                <span class="inner_spanm" id="spTwo">*</span>
+            </div>
+            <div class="abs_class">
+                <div class="flex_flex">
+                    <label for="phone">My Telephone Number:</label>
+                    <input class="flex_phone" type="number" id="phone">
+                </div>
+                <div class="flex_flex">
+                    <label for="Organization">My Organization Name:</label>
+                    <div>
+                    <input type="text" id="Organization" onchange="validateOrg(this)">
+                    </div>
+                </div>
+                <span class="inner_spans" id="spThree">*</span>
+            </div>
+                <div class="main_form">
+                <div class="flex">
+                    <label for="city">My City:</label>
+                    <div class="city_class">
+                    <input class="flex_city" type="text" id="city">
+                    </div>
+                </div>
+                </div>
+                <div class="flex_flex">
+                    <label for="state">My State or Province:</label>
+                    <div class="select_div">
+                    <select name="cars" id="cars" onchange="selectValidation(this)">
+                        <option value="select" selected>Select State or Province</option>
+                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                        <option value="Tamilnadu">Tamilnadu</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Assam">Assam</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Jammu">Jammu</option>
+                    </select>
+                </div>
+                </div>
+                <div class="flex_radio">
+                    <label class="radio_label" for="contact">Please Contact Me By:</label>
+                    <div>
+                       <input onchange="validateGender(this)" class="rad" type="radio" id="male" name="contact" value="Male">
+                       <label for="Email">Male</label><br>
+                       <input onchange="validateGender(this)" class="rad" type="radio" id="female" name="contact" value="Female">
+                       <label for="Phone">Female</label><br>
+                       <input onchange="validateGender(this)" class="rad" type="radio" id="other" name="contact" value="Other">
+                       <label for="Both">Other</label>
+                    </div>
+                </div>
+                <div class="main_form">
+                <div class="flex">
+                    <label class="Promotion_label" for="code">Promotion Code:</label>
+                <div class="code_div">
+                    <input type="text" id="code">
+                </div>
+                </div>
+            </div>
+                <div class="information_div">
+                    <h4 class="h4_div">Optional information</h4>
+                    <h1 class="inform_p">This information is optional but it help us to serve you better.</h1>
+                </div>
+           
+                <div class="website">
+                        <label for="website">My Website Address is :</label>
+                        
+                        <input type="text" id="website">
+                    
+
+                 </div>
+                 <div class="area_one">
+                    <label for="about">Tell Us More About Your Organization:</label>
+                    <textarea id="about" name="textarea"  cols="42"></textarea>
+                </div>
+                <div class="area_two">
+                    <label for="about_two">What i'd really like to know is :</label>
+                    <textarea id="about_two" name="textareatwo"  cols="42"></textarea>
+                </div>
+            
+                <button class="send_button" type="submit" name="submit" onclick=" validate()" >Send Message</button>
+                <button class="reset_button" type="reset" name="reset"  onclick=" validateReset()">Clear Form</button>
+               
+            </form>
+        </div>
+    </section>
+    <script src="contact.js"></script>
+</body>
+</html>
