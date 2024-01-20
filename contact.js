@@ -22,13 +22,17 @@ function  validateEmail(arg){
       
     const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     const isValid = emailPattern.test(arg.value);  
-
+    var spanval =   document.getElementById("spTwo");
     if(isValid && arg.value!="" ){
-        var spanval =   document.getElementById("spTwo");
+      
         spanval.innerHTML="*";
         spanval.className="inner_spanm";
-    }
+    }else{
+        spanval.innerHTML="email is Required";
+        spanval.className="spanvaltwo";
+     }
 }
+
 
 function validate(){
     
@@ -68,20 +72,28 @@ function validate(){
 function validateName(arg){
 
     var name = arg.value;
+    var spanval =   document.getElementById("spOne");
     if(name!=""){
-        var spanval =   document.getElementById("spOne");
+       
         spanval.innerHTML="*";
         spanval.className="inner_span";
+     }else{
+        spanval.innerHTML="name is Required";
+        spanval.className="spanval";
      }
 }
 
 function validateOrg(arg){
     var org = arg.value;
+    var spanval =   document.getElementById("spThree");
     if(org!=""){
-        var spanval =   document.getElementById("spThree");
+     
         spanval.innerHTML="*";
         spanval.className="inner_spans";
-    }
+    }else{
+        spanval.innerHTML="Org name is Required";
+        spanval.className="spanvalthree";
+     }
 }
 
 function validateReset(){
